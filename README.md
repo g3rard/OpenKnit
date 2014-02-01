@@ -14,8 +14,11 @@ Knitic is the software for operating the machine, by Mar Canet & Varvar Guljajev
 
 
 SOON
+
 all the .stl exports of every printable part. 
+
 a step by step assembly manual.
+
 a bill of materials with every single part, quantity-price-provider
 
 
