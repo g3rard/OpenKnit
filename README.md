@@ -7,13 +7,14 @@ Currently working on making the machine fully automated, since some steps are st
 
 Documentation
 
-In the SketchUp file you can find the whole machine, you can export parts for printing and check details for assembling, a bit rough I guess, working on that.
+In the SketchUp file you can find the whole machine, you can export parts for printing and checking details for assembling, a bit rough I guess, working on that.
 The Arduino file is the firmware for the machine, for Arduino Leonardo (since it has 5 interrupts).
-Knitic is the software for operating the machine, by Mar Canet & Varvar Guljajeva at https://github.com/mcanet/knitic
+Knitic is the software for operating the machine, by Mar Canet & Varvara Guljajeva at https://github.com/mcanet/knitic
 
 
 
 SOON
+
 All the .stl exports of every printable part. 
 A step by step assembly manual.
 A bill of materials with every single part, quantity-price-provider
