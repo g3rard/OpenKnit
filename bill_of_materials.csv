@@ -1,0 +1,29 @@
+COMPONENT,UNITS,PRICE (€),PROVIDER
+,,,LOCAL (Barcelona)
+methacrylate,1015x1525x3mm,60,http://plasticexpress.es/
+lasercut,1,100,http://fablabbcn.org/
+aluminum T profile 15x15,3582mm,10.78,http://www.hiperaluminio.com/
+aluminum I profile 20x3,5505mm,13.76,http://www.hiperaluminio.com/
+plastic parts,500gr,12.07,http://www.reprapbcn.com/catalog/index.php/material-pla/pla-3mm.html
+Arduino Leonardo,1,21.78,http://www.diotronic.com/raspberry-pi-arduino/arduino/placas/arduino-leonardo-w-headers_r_1080_26762.aspx
+microinterrupter,2,2.84,http://www.diotronic.com/componentes-mecanicos/interruptores-conmutadores-pulsadores/microrruptores-final-de-carrera/microrrup-miniatura-3a125v-c-p_r_194_1820.aspx
+photo relfective sensor ,1,1.29,http://www.ondaradio.es/producto/cny70-rohs-refleoptcouplgaas-ir-infrared-emitt-diodeplastcase-23579.aspx
+hall effect sensor,2,2.56,http://www.ondaradio.es/producto/a1106euat-rohs-transistor-efecto-hall-sip-3-27327.aspx
+bearing 608,1,2,local hardware store or skateshop
+threaded rod,881mm,1.5,local hardware store
+nuts and bolts,many,20,local hardware store
+,,,SPAIN
+aluminum X profile 20x20,6870mm,26.68,http://www.motedis.es/shop/Perfil-ranurado/Perfil-20-Tipo-B-ranura-6/Perfil-20x20-Tipo-B-ran-6::999991.html
+aluminum X profile 30x30,3000mm,20.29,http://www.motedis.es/shop/Perfil-ranurado/Perfil-30-Tipo-B-ranura-8/Perfil-30x30-Tipo-B-ran-8::99999432.html
+aluminum X profile 40x40,3582mm,34.76,http://www.motedis.es/shop/Perfil-ranurado/Perfil-40-Tipo-I-ranura-8/Perfil-40x40L-Tipo-I-ran-8::999999.html
+,,,EUROPE (UK)
+needles,380,104.5,http://www.bsk.co.uk/knitmastersilver-reed-sk120--sr120-xkn8-763-p.asp
+,,,CHINA (Aliexpress)
+stepper driver A4988,1,5.28,http://www.aliexpress.com/item/Stepstick-A4988-for-3D-printer-with-heat-sink-Reprap-Stepper-motor-driver-order-4-pcs-price/1053639333.html
+stepper motor nema17,1,10.91,http://www.aliexpress.com/item/4-Leads-Nema-17-Stepper-Motor-2800g-cm-12VDC-0-4A-CNC-Cutting-and-Mill-of/536727302.html
+servomotor SG90,5,7.85,http://www.aliexpress.com/item/Hot-sell-5X-SG90-9g-Mini-Micro-Servo-for-RC-for-RC-250-450-Helicopter-Airplane/1299439951.html
+timing belt gt2,4m,11.98,http://www.aliexpress.com/item/Hot-sale-10meter-GT2-6mm-open-timing-belt-width-6mm-GT2-belt/1395064676.html
+timing pulley gt2,1,7.3,http://www.aliexpress.com/item/20GT2-6-timing-pulley-2pcs-20-teeth-6mm-width-5mm-bore-free-shipping/877902440.html
+Vgroove bearing 623,24,46,http://www.aliexpress.com/item/10pcs-3mm-V-Groove-Sealed-Ball-Bearings-0-118-inch-vgroove-bearing-623VV-3-12-4/947908627.html
+,,,
+,,524.13,€ total
