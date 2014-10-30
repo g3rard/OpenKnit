@@ -50,15 +50,15 @@ Servo servoBB;
 Servo servoBT;
 Servo servoSelection;
 
-int servoFB_in = 98;
-int servoFB_out = 67;
-int servoFT_in = 10;
-int servoFT_out = 120;
+int servoFB_in = 114;
+int servoFB_out = 88;
+int servoFT_in = 132;
+int servoFT_out = 35;
 
-int servoBB_in = 95;
-int servoBB_out = 135;
-int servoBT_in = 5;
-int servoBT_out = 100;
+int servoBB_in = 40;
+int servoBB_out = 72;
+int servoBT_in = 38;
+int servoBT_out = 150;
 
 //solenoid
 int solenoidTop = 11;  

@@ -28,7 +28,7 @@ void oneTube (){
         digitalWrite(steps, HIGH);  
         digitalWrite(steps, LOW);   
         delayMicroseconds(speedRotation);
-        //        Serial.println(needle);
+                Serial.println(needle);
 
         needle = encoderValue/11.8;
 
