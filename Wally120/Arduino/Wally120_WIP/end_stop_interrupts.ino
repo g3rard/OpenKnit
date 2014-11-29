@@ -14,15 +14,13 @@ void updateEncoder(){
 }
 
 
-//end stop right
-void endStopR() {
+//end stop
+void endStop() {
   j = stepsRotation++;
   needleBed = 1;
   dirRotation = LOW;
   increment = 1;
-  encoderValue = 13.0;      //value is reset so starts counting needles from 0  15.5
-  needleToGo = 0;        //so prevNeedleToGo is reset to 0 (see void needleInput())
-  inputCounter = 0;      //reset the input orders counter 
+  encoderValue = 0;      //value is reset so starts counting needles from 0  15.5
 }
 
 

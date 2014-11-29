@@ -1,73 +1,58 @@
-void oneTube (){
+void oneTube () {
 
 
-  delay(1000);
+//  delay(3000);
 
-  while(numberRows < 91){
+  while (numberRows < 100) {
     Serial.print ("row  ");
     Serial.println(numberRows);
     delay(10);
 
-    if (needleBed == 1){ 
+    if (needleBed == 1) {
 
-      //back servos
-      servoBB.write(servoBB_out); //137
-      servoBT.write(servoBT_out);
-      delay (50);
-      //front servos
-      servoFB.write(servoFB_in);  //middle
-      servoFT.write(servoFT_in);  //in
-      delay (50);
-
-      digitalWrite(reset, LOW);    
+      servosFront();
+     
+      digitalWrite(reset, LOW);
       delay(100);
-      digitalWrite(reset, HIGH);    
-      digitalWrite(dir, LOW); 
+      digitalWrite(reset, HIGH);
+      digitalWrite(dir, LOW);
 
-      for (i = 0; i<stepsRotation; i++){
-        digitalWrite(steps, HIGH);  
-        digitalWrite(steps, LOW);   
+      for (i = 0; i < stepsRotation; i++) {
+        digitalWrite(steps, HIGH);
+        digitalWrite(steps, LOW);
         delayMicroseconds(speedRotation);
-                Serial.println(needle);
 
-        needle = encoderValue/11.8;
+        //Serial.println(encoderValue);
 
-        if(needle > maxNeedle) {  
+        if (encoderValue == 600) {  //limits the movement to the left
           i = stepsRotation++;
           needleBed = 2;
-          delay(100);
         }
-      } 
+      }
     }
 
     //CW, moving right
-    if (needleBed == 2){   
+    if (needleBed == 2) {
 
-      //front servos
-      servoFB.write(servoFB_out);  //top
-      servoFT.write(servoFT_out);  //in
-      //back servos
-      servoBB.write(servoBB_in); //102
-      servoBT.write(servoBT_in);
-      delay (50);
+      servosBack();
 
-      digitalWrite(reset, LOW);    
+      digitalWrite(reset, LOW);
       delay(100);
-      digitalWrite(reset, HIGH);   
-      digitalWrite(dir, HIGH); 
+      digitalWrite(reset, HIGH);
+      digitalWrite(dir, HIGH);
 
-      for ( j = 0; j<stepsRotation; j++){
-        digitalWrite(steps, HIGH);  
-        digitalWrite(steps, LOW);   
+      for ( j = 0; j < stepsRotation; j++) {
+        digitalWrite(steps, HIGH);
+        digitalWrite(steps, LOW);
         delayMicroseconds(speedRotation);
-        needle = encoderValue/11.8;
 
+        //Serial.println(encoderValue);
 
-        if(needle < minNeedle) { 
+        if (encoderValue == 150) {  //limits the movement to the right
           j = stepsRotation++;
           needleBed = 1;
-        }      
-      } 
+        }
+      }
     }
     numberRows++;
   }
