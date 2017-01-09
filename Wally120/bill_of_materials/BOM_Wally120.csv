@@ -8,7 +8,7 @@ carbon fiber tensor,120mm,2,Servei Estació
 copper rod,1.5x160mm,1,Servei Estació
 plastic parts,300gr,8,http://www.reprapbcn.com/catalog/index.php/material-pla/pla-3mm.html
 Arduino Leonardo,1,21.78,http://www.diotronic.com/raspberry-pi-arduino/arduino/placas/arduino-leonardo-w-headers_r_1080_26762.aspx
-microinterrupter,2,1.72,http://www.diotronic.com/componentes-mecanicos/interruptores-conmutadores-pulsadores/microrruptores-final-de-carrera/microrrup-miniatura-3a125v-c-p_r_194_1820.aspx
+microinterrupter,2,1.72,http://www.diotronic.com/microrrup-miniatura-3a125v-c-p_1820/
 rotary encoder,1,1.6,http://www.ondaradio.es/producto/ec12e12204-rohs-alps-encoder-vertical-12-det-12ppr-21700.aspx
 stepper driver A4988,1,9,http://www.reprapbcn.com/en/catalog/product/white-pololu-stepper-motor-driver-carrier-heatsink
 stepper motor nema17,1,13,http://www.reprapbcn.com/es/catalog/product/nema-17-stepper-not-crimped
@@ -23,7 +23,7 @@ aluminum X profile 20x20,800mm*4=3200,14,http://www.motedis.es/shop/Perfil-ranur
 aluminum X profile 30x30,(162*2 (one side threaded))+(310*2)+(800*2) = 2534,21,http://www.motedis.es/shop/Perfil-ranurado/Perfil-30-Tipo-B-ranura-8/Perfil-30x30-Tipo-B-ran-8::99999432.html
 ,,,EUROPE
 needles,120,50,http://www.bsk.co.uk/knitmastersilver-reed-sk120--sr120-xkn8-763-p.asp
-small servo,6,30,http://hobbyking.com/hobbyking/store/__42775__HK_15178B_Digital_MG_Servo_13_5g_1_5kg_0_08s_EU_Warehouse_.html
+small servo,6,30,https://hobbyking.com/en_us/hobbykingtm-hk15178b-digital-servo-mg-1-5kg-0-08sec-13-5g.html
 ,,,CHINA (Aliexpress)
 timing belt gt2,192cm,2.27,http://www.aliexpress.com/item/Hot-sale-10meter-GT2-6mm-open-timing-belt-width-6mm-GT2-belt/1525204050.html
 Vgroove bearing 623,16,32,http://www.aliexpress.com/item/10pcs-3mm-V-Groove-Sealed-Ball-Bearings-0-118-inch-vgroove-bearing-623VV-3-12-4/947908627.html
