@@ -18,12 +18,14 @@ void homing() {
   digitalWrite(reset, HIGH);   
   digitalWrite(dir, HIGH);
 
+  Serial.println("homingStart");
   for ( j = 0; j<stepsRotation; j++)       
   {
     digitalWrite(steps, HIGH);  
     digitalWrite(steps, LOW);   
     delayMicroseconds(speedRotation); 
-  } 
+  }
+  Serial.println("homingEnd");
 
   needleBed = 1;   //carriage is on the right so the machine can only knit going to the left, 
   //so it knits on the front needle bed.

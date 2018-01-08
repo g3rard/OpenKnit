@@ -1,9 +1,9 @@
 //stepper
 #define speedRotation 1000  //speed of the motor rotation
 int steps = A1;
-int dir = A2; 
+int dir = A2;
 int reset = A0;
-int stepsRotation = 30000; //steps that the stepper does 
+int stepsRotation = 30000; //steps that the stepper does
 int i;
 int j;
 int h;
@@ -21,44 +21,46 @@ int increment = 1;
 
 int numberRows = 0;
 int needleBed = 1;           //front needle bed = 1 , back needle bed = 2
-//(to create tubular sections)the knitting carriage have two identical systems, 
+//(to create tubular sections)the knitting carriage have two identical systems,
 //one operating in the front needle bed and the other in the back, they never operate at the same time.
 //carriage on the front needle bed operates only going to the left, while going to the right
 //the front systems is "deactivated" and the carriage only operates in the back needle bed
 
 //servo
-#include <Servo.h> 
-Servo servoFB; 
+#include <Servo.h>
+Servo servoFB;
 Servo servoFT;
 Servo servoBB;
 Servo servoBT;
 Servo servoSelection; //not used with Wally120 since it has only one Yarn Carrier
 
-int servoFB_in = 67;  
-int servoFB_out = 99; 
-int servoFT_in = 80; 
-int servoFT_out = 155; 
+int servoFB_in = 95;
+int servoFB_out = 60;
 
-int servoBB_in = 82;
-int servoBB_out = 112;
-int servoBT_in = 80;
-int servoBT_out = 120;
+int servoFT_in = 85;
+int servoFT_out = 120;
+
+int servoBB_in = 55;
+int servoBB_out = 90;
+
+int servoBT_in = 65;
+int servoBT_out = 100;
 
 
 void setup() {
   Serial.begin (9600);
 
   //stepper
-  pinMode(steps, OUTPUT); 
-  pinMode(dir, OUTPUT); 
+  pinMode(steps, OUTPUT);
+  pinMode(dir, OUTPUT);
   pinMode(reset, OUTPUT);
 
   //encoder
-  pinMode(encoderPin1, INPUT); 
+  pinMode(encoderPin1, INPUT);
   pinMode(encoderPin2, INPUT);
-  digitalWrite(encoderPin1, HIGH); 
-  digitalWrite(encoderPin2, HIGH); 
-  attachInterrupt(2, updateEncoder, CHANGE); 
+  digitalWrite(encoderPin1, HIGH);
+  digitalWrite(encoderPin2, HIGH);
+  attachInterrupt(2, updateEncoder, CHANGE);
   attachInterrupt(3, updateEncoder, CHANGE);
 
   //end stop
@@ -73,10 +75,6 @@ void setup() {
   homing();  //carriage goes home before anything else to get coordinatee zero
 }
 
-void loop(){ 
+void loop(){
   oneTube();  //scarfs, beanies, dresses (no sleeves), socks, etc
 }
-
-
-
-
