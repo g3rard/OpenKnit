@@ -1,4 +1,4 @@
-//stepper
+  //stepper
 #define speedRotation 1000  //speed of the motor rotation
 int steps = A1;
 int dir = A2;
@@ -34,17 +34,18 @@ Servo servoBB;
 Servo servoBT;
 Servo servoSelection; //not used with Wally120 since it has only one Yarn Carrier
 
-int servoFB_in = 95;
-int servoFB_out = 60;
+int servoFB_in = 55;  
+int servoFB_out = 112; 
+int servoFT_in = 85; 
+int servoFT_out = 160; 
 
-int servoFT_in = 85;
-int servoFT_out = 120;
+int servoBB_in = 50;
+int servoBB_out = 105;
+int servoBT_in = 60;
+int servoBT_out = 130;
 
-int servoBB_in = 55;
-int servoBB_out = 90;
-
-int servoBT_in = 65;
-int servoBT_out = 100;
+int servoYarn_in = 65;
+int servoYarn_out = 100;
 
 
 void setup() {

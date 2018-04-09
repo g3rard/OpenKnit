@@ -22,9 +22,10 @@ void oneTube () {
         digitalWrite(steps, LOW);
         delayMicroseconds(speedRotation);
 
-        //Serial.println(encoderValue);
+        Serial.println("left:");
+        Serial.println(encoderValue);
 
-        if (encoderValue == 600) {  //limits the movement to the left
+        if (encoderValue >= 840) {  //limits the movement to the left
           i = stepsRotation++;
           needleBed = 2;
         }
@@ -46,9 +47,10 @@ void oneTube () {
         digitalWrite(steps, LOW);
         delayMicroseconds(speedRotation);
 
-        //Serial.println(encoderValue);
+        Serial.println("right:");
+        Serial.println(encoderValue);
 
-        if (encoderValue == 150) {  //limits the movement to the right
+        if (encoderValue <= 0) {  //limits the movement to the right
           j = stepsRotation++;
           needleBed = 1;
         }

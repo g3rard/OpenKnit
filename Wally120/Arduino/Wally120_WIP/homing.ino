@@ -2,16 +2,6 @@
 
 void homing() {
 
-  //servos
-  servoFB.write(servoFB_out);
-  delay (20);
-  servoFT.write(servoFT_out);
-  delay (20);
-  servoBB.write(servoBB_out); 
-  delay (20);
-  servoBT.write(servoBT_out);
-  delay (20);
-
   //CW right
   digitalWrite(reset, LOW);    
   delay(10);
@@ -25,6 +15,17 @@ void homing() {
     digitalWrite(steps, LOW);   
     delayMicroseconds(speedRotation); 
   }
+
+  //servos
+  servoFB.write(servoFB_out);
+  delay (20);
+  servoFT.write(servoFT_out);
+  delay (20);
+  servoBB.write(servoBB_out); 
+  delay (20);
+  servoBT.write(servoBT_out);
+  delay (20);
+  
   Serial.println("homingEnd");
 
   needleBed = 1;   //carriage is on the right so the machine can only knit going to the left, 

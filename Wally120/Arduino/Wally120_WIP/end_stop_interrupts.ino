@@ -11,7 +11,6 @@ void updateEncoder(){
   if(sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) encoderValue = encoderValue - increment;
 
   lastEncoded = encoded; //store this value for next time
-  Serial.println(sum);
 }
 
 
