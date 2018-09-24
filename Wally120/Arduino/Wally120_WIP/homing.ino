@@ -9,7 +9,7 @@ void homing() {
   digitalWrite(dir, HIGH);
 
   Serial.println("homingStart");
-  for ( j = 0; j<stepsRotation; j++)       
+  for ( j = 0; j < stepsRotation; j++)       
   {
     digitalWrite(steps, HIGH);  
     digitalWrite(steps, LOW);   
