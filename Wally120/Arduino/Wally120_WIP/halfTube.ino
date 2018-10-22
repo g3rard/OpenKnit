@@ -1,7 +1,7 @@
-int FORWARD_KNIT = 1;
-int FORWARD_EMPTY = 2;
-int BACKWARD_KNIT = 3;
-int BACKWARD_EMPTY = 4;
+const int FORWARD_KNIT = 1;
+const int FORWARD_EMPTY = 2;
+const int BACKWARD_KNIT = 3;
+const int BACKWARD_EMPTY = 4;
 
 int direction = FORWARD_KNIT;
 
