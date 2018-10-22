@@ -46,7 +46,7 @@ void goForward(int endpoint) {
     delayMicroseconds(speedRotation);
     
     if (encoderValue >= endpoint) {  //limits the movement to the left
-       = stepsRotation++;
+      j = stepsRotation++;
       return;
     }
   }
